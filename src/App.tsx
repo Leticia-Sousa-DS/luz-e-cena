@@ -1,13 +1,11 @@
 import Banner from "./components/Banner"
-import Button from "./components/Button"
-import Link from "./components/Link"
+import Header from "./components/Header"
 
 function App() {
   return (
   <>
+    <Header />
     <Banner src={"./Imagens/Banner Desktop.png"} alt={"Banner do Luz e Cena para Desktop, com imagem de pessoas no cinema e formas abstratas"} />
-    <Link href="/" target="_blank">Link</Link>
-    <Button variant={"default"}>Teste</Button>
   </>
   )
 }
