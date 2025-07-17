@@ -1,22 +1,23 @@
 import { FaLocationDot } from "react-icons/fa6";
 import SelectorGroup from "../../Selector/SelectorGroup";
 import SelectorOption from "../../Selector/SelectorOption";
+import useFetchCities from "../../../hooks/useFetchCities";
 
-const cidades = [
-    { id: 1, nome: "Rio Branco"},
-    { id: 2, nome: "Maceió"},
-    { id: 3, nome: "Macapá"},
-    { id: 4, nome: "Manaus"},
-    { id: 5, nome: "Salvador"},
-    { id: 6, nome: "Fortaleza"},
-];
 
 const HeaderFormFilters = () => {
+    const {cities, isLoading, error } = useFetchCities();
+
     return (
         <form>
             <SelectorGroup id='cidade' icon={<FaLocationDot/>}>
                 <SelectorOption value="" label="Escolha sua cidade..."/>
-                {cidades.map((cidade) => {
+                
+                {isLoading && <SelectorOption value="" label="Carregando cidades..." disabled />}
+                {error && <SelectorOption value="" label={error} disabled />}
+
+
+
+                {cities.map((cidade) => {
                     return (
                         <SelectorOption 
                             key={cidade.id} 

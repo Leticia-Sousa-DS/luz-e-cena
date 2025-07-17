@@ -13,3 +13,8 @@ export interface Movie {
     duracao: number;
     censura: Censura;
 }
+
+export interface City {
+    id: number;
+    nome: string;
+}

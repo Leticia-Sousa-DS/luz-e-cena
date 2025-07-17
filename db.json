@@ -80,5 +80,35 @@
       "genero": "Ação",
       "duracao": 100
     }
+  ],
+  "cities": [
+    { "id": 1, "nome": "Rio Branco" },
+    { "id": 2, "nome": "Maceió" },
+    { "id": 3, "nome": "Macapá" },
+    { "id": 4, "nome": "Manaus" },
+    { "id": 5, "nome": "Salvador" },
+    { "id": 6, "nome": "Fortaleza" },
+    { "id": 7, "nome": "Brasília" },
+    { "id": 8, "nome": "Vitória" },
+    { "id": 9, "nome": "Goiânia" },
+    { "id": 10, "nome": "São Luís" },
+    { "id": 11, "nome": "Cuiabá" },
+    { "id": 12, "nome": "Campo Grande" },
+    { "id": 13, "nome": "Belo Horizonte" },
+    { "id": 14, "nome": "Belém" },
+    { "id": 15, "nome": "João Pessoa" },
+    { "id": 16, "nome": "Curitiba" },
+    { "id": 17, "nome": "Recife" },
+    { "id": 18, "nome": "Teresina" },
+    { "id": 19, "nome": "Rio de Janeiro" },
+    { "id": 20, "nome": "Natal" },
+    { "id": 21, "nome": "Porto Alegre" },
+    { "id": 22, "nome": "Porto Velho" },
+    { "id": 23, "nome": "Boa Vista" },
+    { "id": 24, "nome": "Florianópolis" },
+    { "id": 25, "nome": "São Paulo" },
+    { "id": 26, "nome": "Aracaju" },
+    { "id": 27, "nome": "Palmas" }
   ]
+
 }
