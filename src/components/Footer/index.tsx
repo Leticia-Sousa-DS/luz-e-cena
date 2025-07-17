@@ -1,3 +1,4 @@
+import Banner from "../Banner";
 import FooterDevelopedBy from "./components/FooterDevelopedBy";
 import FooterInfo from "./components/FooterInfo";
 import FooterInstitucional from "./components/FooterInstitucional";
@@ -16,6 +17,7 @@ const Footer = () => {
                     <FooterSocials />
                 </div>
             </footer>
+            <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
             <FooterDevelopedBy />
         </>
     )

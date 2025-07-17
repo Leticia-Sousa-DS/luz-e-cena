@@ -8,10 +8,15 @@ function App() {
   return (
   <>
     <Header />
+    <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
     <Banner src={"./Imagens/Banner Desktop.png"} alt={"Banner do Luz e Cena para Desktop, com imagem de pessoas no cinema e formas abstratas"} />
+    <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
     <MovieSection />
+    <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
     <Banner src={"./Imagens/Banner_Combo.png"} alt={"Banner do Combo de Pipoca Estelar"} />
+    <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
     <Newsletter />
+    <Banner src={"./Imagens/Tarjeta - Desktop.png"} alt={"Tarjeta"}/>
     <Footer />
   </>
   )
