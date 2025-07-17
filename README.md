@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# Luz & Cena
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-Currently, two official plugins are available:
+Projeto fictício que exibe os filmes em cartaz de um cinema, desenvolvido em React + TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias e Bibliotecas
 
-## Expanding the ESLint configuration
+- **React** (v19)
+- **TypeScript**
+- **Vite** (build e dev server)
+- **Axios** (requisições HTTP)
+- **react-icons** (ícones SVG)
+- **json-server** (API fake para desenvolvimento)
+- **ESLint** (padronização e qualidade de código)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Estrutura e Padrões
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Componentização**: Componentes funcionais reutilizáveis, organizados por domínio em `src/components`.
+- **Hooks customizados**: Lógica de busca e filtro de filmes em `src/hooks` (`useFetchMovies`, `useFilterMovies`, `useFetchCities`).
+- **Separação de estilos**: CSS Modules para isolamento de estilos por componente.
+- **API fake**: Consumo de dados via `json-server` usando o arquivo `db.json`.
+- **Tipagem**: Tipos TypeScript centralizados em `src/types`.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Setup e Execução
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Inicie a API fake:**
+   ```bash
+   npm run server
+   ```
+   A API estará disponível em [http://localhost:3001](http://localhost:3001).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Inicie o projeto em modo desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+   O app estará disponível em [http://localhost:5173](http://localhost:5173) (ou porta indicada no terminal).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Build para produção:**
+   ```bash
+   npm run build
+   ```
+
+5. **Lint do projeto:**
+   ```bash
+   npm run lint
+   ```
+
+## Observações
+
+- O projeto é fictício e não possui fins comerciais.
+- Os dados de filmes **e cidades** estão em `db.json` e podem ser editados conforme necessário.
